@@ -1,0 +1,159 @@
+html {
+  box-sizing: border-box;
+  font-family:'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #47B5FF;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color:#06283D;
+  width: 100vw;
+}
+input {
+  background-color: white;
+  border-radius: 10px;
+  border: thick solid #FFFFFF;
+  color: #212121;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 10px 15px;
+  width: 30vw;
+}
+
+h1 {
+  font-family:'Poppins', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  font-size: 2rem;
+  margin: 5px 80px;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 12vw;
+  height: 12vw;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.card p {
+  background-color: #1363DF;
+  color: #d6d5a8;
+  flex: 1;
+  font-size: 1.2rem;
+  margin-top: 3px;
+  padding: 5px 5px;
+  text-align: center;
+}
+.card img {
+  object-fit: cover;
+}
+
+
+
+.btn-reset {
+  min-width: 130px;
+  color: #51557e;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 1.0rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  outline: none;
+  border: medium solid #FFFFFF;
+  background: #fff;
+}
+.btn-reset:hover {
+  background: #06283D;
+  color: #212121;
+}
+
+.btn-eliminar {
+  font-family: 'Poppins', sans-serif;
+  color: #212121;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transform: rotate(0deg);
+  border-radius: 700%;
+  border: medium solid #FFFFFF;
+  background: #FFFFFF;
+ 
+}
+.btn-eliminar:hover {
+  background: #FFFFFF;
+  color: #212121;
+  
+}
+
+@media screen and (max-width: 1024px) {
+  input {
+      width: 30vw;
+  }
+
+  .card {
+      width: 20vw;
+      height: 20vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  input {
+      width: 30vw;
+      margin-bottom: 5px;
+  }
+
+  .card {
+      width: 25vw;
+      height: 25vw;
+  }
+}
